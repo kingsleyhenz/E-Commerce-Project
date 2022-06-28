@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.801); 
+    background-image: url(https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFyYmxlJTIwd2FsbHxlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    position: relative;
+}
+.topnav{
+    /* background-color: white; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* color: rgb(7, 193, 218); */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.navbar{
+    background-color: rgb(7, 193, 218);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+.nav__box1{
+    /* background-color: antiquewhite; */
+    width: 15%;
+    height: 90%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    column-gap: 5px;
+}
+.nav__box1 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__box1 span{
+    font-size: 40px;
+}
+.nav__box2{
+    /* background-color: antiquewhite; */
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__box2 input{
+    height: 65%;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    padding: 0% 3%;
+    font-size: 15px;
+    outline: none;
+}
+.nav__box2 button{
+    height: 65%;
+    width: 15%;
+    border: none;
+    border-radius: 3px;
+    background-color: steelblue;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.nav__box2 button:hover{
+    background-color: rgb(46, 121, 182);
+}
+.nav__box3{
+    /* background-color: antiquewhite; */
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.nav__box3 a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    column-gap: 5px;
+    color: white;
+}
+.nav__box3 a:hover{
+    color: whitesmoke;
+}
+.options1{
+    /* background-color: red; */
+    width: max-content;
+    height: 65%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+.options2{
+    /* background-color: red; */
+    width: max-content;
+    height: 65%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.options3{
+    /* background-color: red; */
+   width: max-content;
+    height: 65%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.options4{
+    /* background-color: red; */
+    width: max-content;
+    height: 65%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.nav__box3 span{
+    font-size: 20px;
+}
+.sign__wrp{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 500px;
+    padding: 0% 5%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 30px; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(7, 193, 218);
+}
+#loginform{
+    /* background-color: white; */
+    box-shadow: 10px 10px 30px rgb(214, 214, 214);
+    width: 35%;
+    height: 75%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+#loginform input{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    width: 85%;
+    height: 10%;
+    outline: none;
+}
+#loginform button{
+    width: 40%;
+    height: 20%;
+    border: none;
+    background-color: rgb(7, 193, 218);
+    border-radius: 2px;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(206, 205, 205);
+}
+#regform button:hover{
+    background-color: rgb(30, 154, 185);
+}
+#loginform{
+    /* background-color: whitesmoke; */
+    box-shadow: 10px 10px 30px rgb(214, 214, 214);
+    width: 30%;
+    height: 60%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+ #loginform input{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    width: 85%;
+    height: 10%;
+    outline: none;
+} 
+#loginform button{
+    width: 40%;
+    height: 10%;
+    border: none;
+    background-color: rgb(7, 193, 218);
+    border-radius: 2px;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(206, 205, 205);
+}
+#loginform button:hover{
+    background-color: rgb(30, 154, 185);
+}
+footer{
+    padding: 50px 150px;
+    background-color: rgb(7, 193, 218);
+    color: white;
+    font-family: tahoma;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.company-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    width: 25%;
+}
+.company-info h3{
+    font-size: 22px;
+}
+.company-info p{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.links a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+    /* edit the hover of these links */
+}
+.subscription-wrapper{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.subscription-wrapper h2{
+    font-size: 27px;
+    text-transform: capitalize;
+}
+form{
+    display: flex;
+    column-gap: 0px;
+}
+.subscription-wrapper input{
+    padding: 8px 10px;
+    width: 53%;
+    border: 3px solid rgb(1, 87, 137);
+    background-color: rgb(221, 221, 221);
+    outline: none;
+}
+.subscription-wrapper input::placeholder{
+    color: rgb(32, 32, 32);
+}
+.subscription-wrapper button{
+    padding: 8px 23px;
+    background-color: rgb(1, 87, 137);
+    border: 3px solid rgb(1, 87, 137);
+    color: white;
+}
