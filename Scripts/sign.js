@@ -41,7 +41,7 @@ document.querySelector("#regform").addEventListener("submit", (e) => {
      setTimeout(() => {
        window.history.replaceState(null, null, window.location.pathname);
        
-       window.location.replace("../Index.html");
+       window.location.replace("login.html");
      }, 900);
  
    }else{
