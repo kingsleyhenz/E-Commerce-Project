@@ -8,6 +8,7 @@ document.querySelector("#regform").addEventListener("submit", (e) => {
    const password = formData.get("psw");
  
    const user = { fname: fullname, eml: email, psw: password };
+   
  
    if (localStorage.getItem("user") === null) {
      localStorage.setItem("user", JSON.stringify(user));
@@ -24,7 +25,7 @@ document.querySelector("#regform").addEventListener("submit", (e) => {
      setTimeout(() => {
        window.history.replaceState(null, null, window.location.pathname);
        
-       window.location.replace("../Index.html");
+       window.location.replace("login.html");
      }, 900);
  
    }else{

@@ -406,6 +406,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    cursor: pointer;
 }
 .cat__opt a{
     text-decoration: none;
@@ -566,8 +567,8 @@ body{
     position: absolute;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    background-color: salmon;
-    /* z-index: -1; */
+    /* background-color: salmon; */
+    z-index: -1;
 }
 .off__pack img{
     height: 90%;
