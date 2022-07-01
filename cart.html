@@ -27,10 +27,25 @@
     </div>
     <div class="cart__wrp">
         <div class="buy__display">
-            <div class="shop__list"></div>
+            <div class="shop__list">
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+                <div class="bout"></div>
+            </div>
             <div class="buy__opt">
                 <div class="total__price">
-                    <input type="text" placeholder="Total Price" readonly>
+                    <input type="text" readonly>
                     <h4>Total Price</h4>
                 </div>
                 <button>Buy Now</button>
@@ -39,7 +54,7 @@
         <div class="sell__display"></div>
     </div>
     <script>
-        if (localStorage.getItem("session") === null) {
+        if (sessionStorage.getItem("session") === null) {
             window.location.replace("sign.html");
         }
     </script>

@@ -38,7 +38,7 @@ document.querySelector("#loginform").addEventListener("submit", (e) => {
     setTimeout(() => {
       window.history.replaceState(null, null, window.location.pathname);
 
-      window.location.replace("./cart.html");
+      window.location.replace("cart.html");
     }, 900);
   } else {
     Swal.fire({
