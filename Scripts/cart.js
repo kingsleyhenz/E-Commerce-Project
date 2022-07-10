@@ -30,3 +30,18 @@ let priceStr = div.children[2].children[1].children[1].innerText.toString()
 priceStr=priceStr.replace("&#8358","")
 console.log(priceStr);
 }
+
+
+document.querySelector('#upload').addEventListener("click",() =>{
+  Swal.fire({
+    toast: true,
+    position: "top",
+    icon: "success",
+    text: "Items Have Been Uploaded",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+  });
+})  
+
+

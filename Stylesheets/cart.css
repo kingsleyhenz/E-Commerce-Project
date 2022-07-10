@@ -133,44 +133,50 @@ body{
 .cart__wrp{
     /* background-color: red; */
     width: 100%;
-    height: 900px;
+    height: 1200px;
     padding: 1% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    row-gap: 20px;
+    row-gap: 50px;
     font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.welcome__display{
+    background-color: white;
+    width: 90%;
+    height: 10%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
 }
 .buy__display{
     background-color: white;
     width: 90%;
-    height: 35%;
+    height: 50%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 10px rgb(192, 191, 191);
 }
 .shop__list{
-    background-color: blue;
+    /* background-color: blue; */
     width: 85%;
     height: 100%;
     overflow-y: scroll;
-    display: flex;
-    padding: 2px 2px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5px 2px;
 }
 .buy__opt{
-    /* background-color: blue; */
     width: 15%;
-    height: 40%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .total__price{
-    /* background-color: rgb(114, 230, 5); */
     width: 100%;
     height: 50%;
     display: flex;
@@ -184,28 +190,69 @@ body{
     border: 2px solid gray;
     padding: 0px 5px;
     border-radius: 5px;
-    /* color: black;     */
 }
 .buy__opt button{
-    /* width: 100%; */
-    /* height: 20%; */
     padding: 5px 40px;
     border: none;
     background-color: rgb(7, 193, 218);
     border-radius: 2px;
     color: whitesmoke;
+    box-shadow: 0px 0px 5px rgb(46, 121, 182);
 }
-.bout{
-    background-color: black;
-    min-width: 20%;
-    height: 90%;
-    margin-left: 10px;
+.buy__opt button:hover{
+    background-color: rgb(46, 121, 182);
 }
 .sell__display{
     background-color: white;
     width: 90%;
-    height: 40%;
+    height: 50%;
     border-radius: 2px;
     box-shadow: 0px 0px 10px rgb(192, 191, 191);
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sell__display button{
+    width: 80%;
+}
+.sell__list{
+    /* background-color: blue; */
+    width: 85%;
+    min-height: 100%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 20px;
+}
+.sell__cards{
+    /* background-color: white; */
+    width: 97%;
+    height: 95%;
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(233, 233, 233);
+}
+#name{
+    /* background-color: whitesmoke; */
+    border:none;
+    padding: 2% 5%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgb(231, 230, 230);
+    color: black;
+    outline: none;
+}
+#image{
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px rgb(230, 230, 230);
+    width: 90%;
+    height: 60%;
+    display: flex;
+    padding: 2% 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
