@@ -147,6 +147,78 @@ body{
     height: 10%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+}
+.wlcm__txt{
+    /* background-color: aqua; */
+    width: 32%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wlcm__txt i{
+    font-size: 100px;
+    color: rgb(5, 175, 197);
+}
+.acc__hlp{
+    /* background-color: red; */
+    width: 25%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy{
+    /* background-color: aqua; */
+    width: 45%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.buy i{
+    font-size: 25px;
+    color: rgb(5, 175, 197);
+}
+.buy i:hover{
+    color: rgb(46, 121, 182);
+    cursor: pointer;
+}
+.sell{
+    /* background-color: aqua; */
+    width: 45%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.sell i{
+    font-size: 25px;
+    color: rgb(5, 175, 197);
+}
+.sell i:hover{
+    color: rgb(46, 121, 182);
+    cursor: pointer;
+}
+.logbx{
+    /* background-color: yellow; */
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.logbx i{
+    color: rgb(5, 175, 197);
+    font-size: 25px;
+}
+.logbx i:hover{
+    color: rgb(46, 121, 182);
+    cursor: pointer;
 }
 .buy__display{
     background-color: white;
@@ -219,7 +291,7 @@ body{
 .sell__list{
     /* background-color: blue; */
     width: 85%;
-    min-height: 100%;
+    height: 100%;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -228,31 +300,159 @@ body{
 .sell__cards{
     /* background-color: white; */
     width: 97%;
-    height: 95%;
+    height: fit-content;
     padding: 5% 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-shadow: 2px 2px 5px rgb(233, 233, 233);
+    row-gap: 10px;
+
+}
+.sell__price{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sell__price input{
+    width: 90%;
+    height: 40%;
+    border: 2px solid gray;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+.sell__opt{
+    /* background-color: red;    */
+    width: 15%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sell__opt i{
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(5, 175, 197);
+}
+.sell__opt i:hover{
+    color: rgb(46, 121, 182);
+}
+.sell__opt button{
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(7, 193, 218);
+    border-radius: 2px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 5px rgb(46, 121, 182);
+}
+.sell__opt button:hover{
+    background-color: rgb(46, 121, 182);
+}
+#newcart{
+    font-size: 70px;
+    border: none;
+    background-color: white;
+    color: rgb(5, 175, 197);
+}
+#newcart i:hover{
+    color: rgb(46, 121, 182);
+    cursor: pointer;
 }
 #name{
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     border:none;
     padding: 2% 5%;
     border-radius: 2px;
-    box-shadow: 0px 0px 10px rgb(231, 230, 230);
+    /* box-shadow: 0px 0px 10px rgb(231, 230, 230); */
     color: black;
     outline: none;
 }
 #image{
-    /* border: 1px solid black; */
-    box-shadow: 0px 0px 10px rgb(230, 230, 230);
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px rgb(230, 230, 230);
     width: 90%;
-    height: 60%;
+    height: 130px;
     display: flex;
+    cursor:  pointer;
     padding: 2% 2%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+footer{
+    padding: 50px 70px;
+    background-color: rgb(5, 175, 197);
+    color: white;
+    font-family: tahoma;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 50px;
+}
+.company-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    width: 25%;
+}
+.company-info h3{
+    font-size: 22px;
+}
+.company-info p{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.links a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+    /* edit the hover of these links */
+}
+.subscription-wrapper{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.subscription-wrapper h2{
+    font-size: 27px;
+    text-transform: capitalize;
+}
+form{
+    display: flex;
+    column-gap: 0px;
+}
+.subscription-wrapper input{
+    padding: 8px 10px;
+    width: 53%;
+    border: 3px solid rgb(1, 87, 137);
+    background-color: rgb(221, 221, 221);
+    outline: none;
+}
+.subscription-wrapper input::placeholder{
+    color: rgb(32, 32, 32);
+}
+.subscription-wrapper button{
+    padding: 8px 23px;
+    background-color: rgb(1, 87, 137);
+    border: 3px solid rgb(1, 87, 137);
+    color: white;
+}
+

@@ -26,61 +26,94 @@
         </div>
     </div>
     <div class="cart__wrp">
-        <div class="welcome__display"></div>
-        <div class="buy__display">
+        <div class="welcome__display">
+            <div class="wlcm__txt">
+                <i class="bi bi-person-fill"></i>
+                <h2 class="title"></h2>
+            </div>
+            <div class="acc__hlp">
+                <div class="buy">
+                   <a href="#buydis"><i class="bi bi-credit-card-fill"></i></a>
+                    <p>Buy Cart</p>
+                </div>
+                <div class="sell">
+                   <a href="#selldis"><i class="bi bi-currency-exchange"></i></a> 
+                    <p>Sell Cart</p>
+                </div>
+            </div>
+            <div class="logbx">
+                <i class="bi bi-door-closed-fill" id="logout"></i>
+                <p>Logout</p>
+            </div>
+        </div>
+        <div class="buy__display" id="buydis">
             <div class="shop__list"></div>
             <div class="buy__opt">
                 <div class="total__price">
-                    <input type="text" readonly>
+                    <input type="text" readonly placeholder="&#8358;">
                     <h4>Total Price</h4>
                 </div>
                 <button>Buy Now</button>
             </div>
         </div>
-        <div class="sell__display">
+        <div class="sell__display" id="selldis">
             <div class="sell__list">
                 <div class="sell__cards">
                     <input type="text" placeholder="Product Name" id="name">
                     <input type="file" id="image">
                     <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
-                </div>
-                <div class="sell__cards">
-                    <input type="text" placeholder="Product Name" id="name">
-                    <input type="file" id="image">
-                    <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
-                </div>
-                <div class="sell__cards">
-                    <input type="text" placeholder="Product Name" id="name">
-                    <input type="file" id="image">
-                    <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
-                </div>
-                <div class="sell__cards">
-                    <input type="text" placeholder="Product Name" id="name">
-                    <input type="file" id="image">
-                    <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
-                </div>
-                <div class="sell__cards">
-                    <input type="text" placeholder="Product Name" id="name">
-                    <input type="file" id="image">
-                    <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
-                </div>
+                  </div>
             </div>
-            <div class="buy__opt">
-                <div class="total__price">
-                    <input type="text" readonly>
+            <div class="sell__opt">
+                <i class="bi bi-file-plus-fill" title="Add More" id="bxbtn"></i>
+                <div class="sell__price">
+                    <input type="text" readonly placeholder="&#8358;">
                     <h4>Total Price</h4>
                 </div>
                 <button id="upload">Upload Items</button>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="company-info">
+            <!-- put the company name here -->
+            <h3>WIZTECH</h3>
+            <!-- put a little summary of your website information here -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolore reiciendis minus eaque esse, eos itaque debitis facere nobis, nihil possimus saepe fugiat sed aperiam recusandae natus culpa ut cum.</p>
+        </div>
+        <div class="links-wrapper">
+            <h4>QUICK LINKS</h4>
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">Help centre</a>
+                <a href="">Nearby Store</a>
+                <a href="">Cart</a>
+                <a href="">Search</a>
+            </div>
+        </div>
+        <div class="links-wrapper">
+            <h4>COMPANY</h4>
+            <div class="links">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookie Policy</a>
+            </div>
+        </div>
+        <div class="subscription-wrapper">
+            <h2>Subscribe to get daily updates On Products.</h2>
+            <form action="" method="get">
+                <input type="email" placeholder="Email Address">
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
     <script>
         if (sessionStorage.getItem("session") === null) {
             window.location.replace("sign.html");
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script> -->
     <script src="/Scripts/cart.js"></script>
 </body>
 </html>
