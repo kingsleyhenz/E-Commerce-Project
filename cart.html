@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Stylesheets/cart.css">
+      <link rel="stylesheet" href="Stylesheets/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -14,10 +15,6 @@
     <div class="navbar">
         <div class="nav__box1"><a href="Index.html"><h1>WIZTECH</h1><span><i class="bi bi-phone-vibrate"></i></span></a></div>
         <div class="nav__box2">
-            <input type="text" placeholder="Search Products">
-            <button onclick="Search()">Search</button>
-        </div>
-        <div class="nav__box3">
             <div class="options1"><a href="sign.html"><span><i class="bi bi-person"></i></span><h4>Sign Up</h4></a></div>
             <div class="options4"><a href="login.html"><span><i class="bi bi-person"></i></span><h4>Login</h4></a></div>
             <div class="options2"><a href="help.html"><span><i class="bi bi-question-circle"></i></span><h4>Help Centre</h4></a></div>
@@ -46,14 +43,14 @@
                 <p>Logout</p>
             </div>
         </div>
-        <div class="buy__display" id="buydis">
-            <div class="shop__list"></div>
+        <div class="buy__display">
+            <div class="shop__list" id="list"></div>
             <div class="buy__opt">
                 <div class="total__price">
-                    <input type="text" readonly placeholder="&#8358;">
-                    <h4>Total Price</h4>
+                    <input type="text" readonly placeholder="&#8358;" id="totprice">
+                    <h4 >Total Price</h4>
                 </div>
-                <button>Buy Now</button>
+                <button id="chkt">Buy Now</button>
             </div>
         </div>
         <div class="sell__display" id="selldis">
@@ -62,6 +59,8 @@
                     <input type="text" placeholder="Product Name" id="name">
                     <input type="file" id="image">
                     <input type="text" placeholder="Enter Amount(&#8358;)" id="name">
+                    <input type="text" placeholder="Enter Phone Number" id="name">
+                    <input type="text" placeholder="Account Details" id="name">
                   </div>
             </div>
             <div class="sell__opt">

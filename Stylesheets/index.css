@@ -51,42 +51,13 @@ body{
 }
 .nav__box2{
     /* background-color: antiquewhite; */
-    width: 40%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav__box2 input{
-    height: 65%;
-    width: 80%;
-    border: none;
-    border-radius: 3px;
-    padding: 0% 3%;
-    font-size: 15px;
-    outline: none;
-}
-.nav__box2 button{
-    height: 65%;
-    width: 15%;
-    border: none;
-    border-radius: 3px;
-    background-color: steelblue;
-    cursor: pointer;
-    color: whitesmoke;
-}
-.nav__box2 button:hover{
-    background-color: rgb(46, 121, 182);
-}
-.nav__box3{
-    /* background-color: antiquewhite; */
     width: 35%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav__box3 a{
+.nav__box2 a{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -94,7 +65,10 @@ body{
     column-gap: 5px;
     color: white;
 }
-.nav__box3 a:hover{
+.nav__box2 a span{
+    font-size: 20px;
+}
+.nav__box2 a:hover{
     color: whitesmoke;
 }
 .options1{
@@ -257,6 +231,7 @@ body{
     background-color: rgb(7, 193, 218);
     width: 10%;
     height: 2px;
+    display: none;
     animation-name: line;
     animation-duration: 2.5s;
     animation-delay: 0s;

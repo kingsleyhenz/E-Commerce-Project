@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgba(245, 245, 245, 0.801); 
@@ -10,6 +11,7 @@ body{
     background-position: center;
     background-size: cover;
     background-blend-mode: lighten;
+    position: relative;
 }
 .navbar{
     background-color: rgb(7, 193, 218);
@@ -18,16 +20,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 2%;
+    padding: 0% 5%;
 }
 .nav__box1{
     /* background-color: antiquewhite; */
-    width: 20%;
+    width: 15%;
     height: 90%;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    color: white;
+    column-gap: 5px;
 }
 .nav__box1 a{
     text-decoration: none;
@@ -37,156 +40,194 @@ body{
     align-items: center;
 }
 .nav__box1 span{
-    font-size: 45px;
+    font-size: 40px;
 }
 .nav__box2{
     /* background-color: antiquewhite; */
-    width: 35%;
+    width: 40%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav__box2 a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 12px;
-    column-gap: 5px;
-    color: white;
+.nav__box2 input{
+    height: 65%;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    padding: 0% 3%;
+    font-size: 15px;
+    outline: none;
 }
-.nav__box2 a:hover{
+.nav__box2 button{
+    height: 65%;
+    width: 15%;
+    border: none;
+    border-radius: 3px;
+    background-color: steelblue;
+    cursor: pointer;
     color: whitesmoke;
 }
-.nav__box2 a span{
-    font-size: 20px;
+.nav__box2 button:hover{
+    background-color: rgb(46, 121, 182);
 }
-.options1{
-    /* background-color: red; */
-    width: max-content;
-    height: 65%;
-    color: white;
+.nav__box3{
+    /* background-color: antiquewhite; */
+    width: 35%;
+    height: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    
-}
-.options2{
-    /* background-color: red; */
-    width: max-content;
-    height: 65%;
     color: white;
+    cursor: pointer;
+}
+.nav__box3 a{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 90%;
     display: flex;
     align-items: center;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-.options3{
-    /* background-color: red; */
-    width: max-content;
-    height: 65%;
+    justify-content: center;
+    text-decoration: none;
     color: white;
-    display: flex;
-    align-items: center;
-    font-family: 'Kdam Thmor Pro', sans-serif;
 }
-.options4{
-    /* background-color: red; */
-    width: max-content;
-    height: 65%;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+.nav__box3 a:hover{
+    color: whitesmoke;
+}
+a > i{
+    font-size: 22px;
+}
+a > p{
+    font-size: 15px;
 }
 .nav__box3 span{
     font-size: 20px;
 }
-.help__wrp{
-    /* background-color: rgb(255, 0, 0); */
+.cart__wrp{
+    /* background-color: red; */
     width: 100%;
-    height: 500px;
-    margin-top: 30px;
-    padding: 1% 2%;
+    height: 900px;
+    padding: 1% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 50px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    row-gap: 25px;
 }
-.help__head{
-    /* background-color: white; */
-    width: 45%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.help__head span{
-    font-size: 30px;
-}
-.help__head h1{
-    font-size: 25px;
-}
-.help__head h2{
-    font-size: 35px;
-    color: rgb(7, 193, 218);
-}
-.issue__text{
-    /* background-color: white; */
-    width: 50%;
+.wlcm__display{
+    background-color: white;
+    width: 95%;
     height: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.issue__text select{
-    background-color: rgb(240, 239, 239);
-    width: 100%;
-    height: 80%;
-    padding: 0 1%;
-    border: none;
-    box-shadow: 5px 5px 10px rgb(211, 211, 211);
     border-radius: 5px;
-    outline: none;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 80px;
 }
-.issue__opt{
-    /* background-color: white; */
-    width: 60%;
-    height: 20%;
-    padding: 0 1%;
+.admin__txt{
+    /* background-color: aqua; */
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.admin__header{
+    /* background-color: aqua; */
+    width: 20%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.issue__icon{
-    /* background-color: aqua; */
-    width: 15%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.issue__icon i{
-    font-size: 50px;
-    color: rgb(7, 193, 218);
-}
-.issue__icon i:hover{
+.admin__header i{
+    font-size: 100px;
     color: rgb(5, 175, 197);
 }
-.issue__icon span{
-    font-size: 14px;
-}
-.contact__info{
-    /* background-color: white; */
-    width: 20%;
-    height: 25%;
+.admin__opt{
+    /* background-color: aqua; */
+    width: 25%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 3px;
+    justify-content: space-between;
+}
+.upload{
+    /* background-color: chartreuse; */
+    width: 60%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 1% 1%;
+}
+.view{
+    /* background-color: yellow; */
+    width: 60%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 1% 1%;
+}
+.info{
+    /* background-color: antiquewhite; */
+    width: 60%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 1% 1%;
+}
+.admin__opt i{
+    font-size: 25px;
+    color: rgb(5, 175, 197);
+}
+.admin__opt i:hover{
+    color: rgb(7, 193, 218);
+}
+.edit__display{
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#edtprdform{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 90%;
+    height: 90%;
+    row-gap: 20px;
+    align-items: center;
+}
+#edtprdform > div{
+    /* background-color: aqua; */
+    height: 30%;
+    width: 100%;
+}
+#edtprdform input{
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+#edtprdform button{
+    background-color: rgb(5, 175, 197);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(1, 122, 138);
+    cursor: pointer;
 }
 footer{
     padding: 50px 70px;
@@ -257,3 +298,4 @@ form{
     border: 3px solid rgb(1, 87, 137);
     color: white;
 }
+

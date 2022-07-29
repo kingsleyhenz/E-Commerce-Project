@@ -6,7 +6,7 @@ const getUsers = () => {
         users = JSON.parse(localStorage.getItem('users'))
     } catch (e) {
         console.log(e)
-    }
+    }  
 
     return users ? users : [];
 }

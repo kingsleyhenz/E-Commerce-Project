@@ -24,6 +24,7 @@ document.querySelector("#regform").addEventListener("submit", (e) => {
           timer: 3000,
           timerProgressBar: true,
         });
+        
       } else {
         Swal.fire({
           toast: true,
